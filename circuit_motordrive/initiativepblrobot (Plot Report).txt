@@ -1,12 +1,12 @@
 Plot Report
 -----------
 
-Report Written:     Saturday, July 14, 2018
-Design Path:        D:\projects_bitbucket\initiativepbl\initiativepblrobot.pcb
+Report Written:     Thursday, August 02, 2018
+Design Path:        C:\Users\k_kame\Documents\GitHub\initiativePBL\circuit_motordrive\initiativepblrobot.pcb
 Design Title:       
 Created:            2018/07/14 13:53:52
-Last Saved:         2018/07/14 16:36:30
-Editing Time:       132 min
+Last Saved:         2018/08/02 20:39:39
+Editing Time:       227 min
 Units:              thou (precision 0)
 
 
@@ -36,45 +36,45 @@ Drill Settings
 Plots Output
 ============
 
-    Plot Job: "D:\projects_bitbucket\initiativepbl\initiativepblrobot.mop"
+    Plot Job: "C:\Users\k_kame\Documents\GitHub\initiativePBL\circuit_motordrive\initiativepblrobot.mop"
 
 
 Gerber Output
 =============
 
-D:\projects_bitbucket\initiativepbl\initiativepblrobot - Top Copper.gbr
+C:\Users\k_kame\Documents\GitHub\initiativePBL\circuit_motordrive\initiativepblrobot - Top Copper.gbr
 
     Layers:
     --------------
     Top Copper
 
     D-Code Shape  (thou)
-    -----------------------
-    D12    Round 10.00
-    D26    Square 60.00
-    D27    Round 60.00
+    ------------------------------------------
+    D19    Round 78.74
+    D70    Round 31.00
+    D79    Oval 70.00 X 100.00  Rotation 90
+    D80    Square 70.00
 
 Gerber Output
 =============
 
-D:\projects_bitbucket\initiativepbl\initiativepblrobot - Bottom Copper.gbr
+C:\Users\k_kame\Documents\GitHub\initiativePBL\circuit_motordrive\initiativepblrobot - Bottom Copper.gbr
 
     Layers:
     -----------------
     Bottom Copper
 
     D-Code Shape  (thou)
-    -----------------------
-    D26    Square 60.00
-    D27    Round 60.00
-    D74    Round 78.74
-    D77    Round 31.00
-    D81    Round 39.00
+    ------------------------------------------
+    D19    Round 78.74
+    D70    Round 31.00
+    D79    Oval 70.00 X 100.00  Rotation 90
+    D80    Square 70.00
 
 NC Drill Output
 ===============
 
-D:\projects_bitbucket\initiativepbl\initiativepblrobot - Drill Data - [Through Hole].drl
+C:\Users\k_kame\Documents\GitHub\initiativePBL\circuit_motordrive\initiativepblrobot - Drill Data - [Through Hole].drl
 
     Output:
     ---------------------------
@@ -84,13 +84,12 @@ D:\projects_bitbucket\initiativepbl\initiativepblrobot - Drill Data - [Through H
 
     Tool  Size           Count   ID
     --------------------------------------
-    T001  0.03000 inches 14    G
-    T002  0.03500 inches 21    B
+    T001  0.03900 inches 35    K
     --------------------------------------
     Total                35
     --------------------------------------
 
-D:\projects_bitbucket\initiativepbl\initiativepblrobot - Drill Data - [Through Hole] (Unplated).drl
+C:\Users\k_kame\Documents\GitHub\initiativePBL\circuit_motordrive\initiativepblrobot - Drill Data - [Through Hole] (Unplated).drl
 
     Output:
     -----------------------------
@@ -101,15 +100,16 @@ D:\projects_bitbucket\initiativepbl\initiativepblrobot - Drill Data - [Through H
     Tool  Size           Count   ID
     --------------------------------------
     T001  0.02500 inches 1
+    T002  0.03937 inches 5     L
     --------------------------------------
-    Total                1
+    Total                6
     --------------------------------------
 
 
 Gerber Output
 =============
 
-D:\projects_bitbucket\initiativepbl\initiativepblrobot - Drill Ident Drawing - [Through Hole].gbr
+C:\Users\k_kame\Documents\GitHub\initiativePBL\circuit_motordrive\initiativepblrobot - Drill Ident Drawing - [Through Hole].gbr
 
     Layers:
     ------------------
@@ -121,12 +121,12 @@ Drill Ident Drawing
 
     Drill Plated Size Shape ID
     -----------------------------------
-    35    Y      100  Round B
-    30    Y      100  Round G
+    39    Y      100  Round K
+    39           100  Round L
 
     D-Code Shape  (thou)
     -----------------------
-    D17    Round 1.00
-    D82    Round 100.00
+    D10    Round 1.00
+    D72    Round 100.00
 
 End Of Report.
