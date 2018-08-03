@@ -1,0 +1,7 @@
+sample_PS4BTの使い方
+
+１．プログラムをArduinoに書き込む（変更不要）
+２．Arduinoのツール→シリアルモニタを速度115200bpsにする
+３．DualShock（以下DS）のPSボタンとshareボタンを同時押しして，DSのLEDが不等感覚で点滅させる（10秒ほど押すときもある）
+４．Arduinoのリセットボタンを押す
+

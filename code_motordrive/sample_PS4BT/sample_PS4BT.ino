@@ -23,7 +23,7 @@ BTD Btd(&Usb); // You have to create the Bluetooth Dongle instance like so
 PS4BT PS4(&Btd, PAIR);
 
 // After that you can simply create the instance like so and then press the PS button on the device
-//PS4BT PS4(&Btd);
+// PS4BT PS4(&Btd);
 
 bool printAngle, printTouch;
 uint8_t oldL2Value, oldR2Value;
