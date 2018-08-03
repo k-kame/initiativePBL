@@ -1,8 +1,8 @@
 /*
- Example sketch for the PS4 Bluetooth library - developed by Kristian Lauszus
- For more information visit my blog: http://blog.tkjelectronics.dk/ or
- send me an e-mail:  kristianl@tkjelectronics.com
- */
+  Example sketch for the PS4 Bluetooth library - developed by Kristian Lauszus
+  For more information visit my blog: http://blog.tkjelectronics.dk/ or
+  send me an e-mail:  kristianl@tkjelectronics.com
+*/
 
 #include <PS4BT.h>
 #include <usbhub.h>
@@ -36,8 +36,11 @@ int pinAphase  = 4; // 回転方向
 int pinBenable = 3;
 int pinBphase  = 2;
 
+unsigned long past_time = 0;
+unsigned long interval = 1000;
+bool flag = true;
+
 void setup() {
-  // put your setup code here, to run once:
   pinMode( pinMODE,    INPUT  );
   pinMode( pinAphase,  OUTPUT );
   pinMode( pinAenable, OUTPUT );
@@ -47,7 +50,7 @@ void setup() {
   digitalWrite( pinMODE, HIGH );
 
   //PS4BTの設定
-    Serial.begin(115200);
+  Serial.begin(115200);
 #if !defined(__MIPSEL__)
   while (!Serial); // Wait for serial port to connect - used on Leonardo, Teensy and other boards with built-in USB CDC serial connection
 #endif
@@ -60,19 +63,25 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  analogWrite(  pinAenable, 127 );
-  digitalWrite( pinAphase, HIGH );
-  analogWrite(  pinBenable, 127 );
-  digitalWrite( pinBphase, HIGH );
-  delay( 5000 );
-  analogWrite(  pinAenable, 64 );
-  digitalWrite( pinAphase, LOW );
-  analogWrite(  pinBenable, 64 );
-  digitalWrite( pinBphase, LOW );
-  delay( 5000 );
+  // put your setup code here, to run once:
+  if ( millis() >= past_time + interval ) {
+    if ( flag == true ) {
+      analogWrite(  pinAenable, 127 );
+      digitalWrite( pinAphase, HIGH );
+      analogWrite(  pinBenable, 127 );
+      digitalWrite( pinBphase, HIGH );
+      flag = false;
+    } else {
+      analogWrite(  pinAenable, 64 );
+      digitalWrite( pinAphase, LOW );
+      analogWrite(  pinBenable, 64 );
+      digitalWrite( pinBphase, LOW );
+      flag = true;
+    }
+  }
 
   //PS4BTの設定
-   Usb.Task();
+  Usb.Task();
 
   if (PS4.connected()) {
     if (PS4.getAnalogHat(LeftHatX) > 137 || PS4.getAnalogHat(LeftHatX) < 117 || PS4.getAnalogHat(LeftHatY) > 137 || PS4.getAnalogHat(LeftHatY) < 117 || PS4.getAnalogHat(RightHatX) > 137 || PS4.getAnalogHat(RightHatX) < 117 || PS4.getAnalogHat(RightHatY) > 137 || PS4.getAnalogHat(RightHatY) < 117) {
