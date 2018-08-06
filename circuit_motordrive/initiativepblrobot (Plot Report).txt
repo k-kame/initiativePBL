@@ -1,12 +1,12 @@
 Plot Report
 -----------
 
-Report Written:     Thursday, August 02, 2018
+Report Written:     Monday, August 06, 2018
 Design Path:        C:\Users\k_kame\Documents\GitHub\initiativePBL\circuit_motordrive\initiativepblrobot.pcb
 Design Title:       
 Created:            2018/07/14 13:53:52
-Last Saved:         2018/08/02 20:39:39
-Editing Time:       227 min
+Last Saved:         2018/08/06 17:40:12
+Editing Time:       327 min
 Units:              thou (precision 0)
 
 
@@ -54,6 +54,7 @@ C:\Users\k_kame\Documents\GitHub\initiativePBL\circuit_motordrive\initiativepblr
     D70    Round 31.00
     D79    Oval 70.00 X 100.00  Rotation 90
     D80    Square 70.00
+    D81    Round 79.00
 
 Gerber Output
 =============
@@ -70,6 +71,7 @@ C:\Users\k_kame\Documents\GitHub\initiativePBL\circuit_motordrive\initiativepblr
     D70    Round 31.00
     D79    Oval 70.00 X 100.00  Rotation 90
     D80    Square 70.00
+    D81    Round 79.00
 
 NC Drill Output
 ===============
@@ -84,9 +86,9 @@ C:\Users\k_kame\Documents\GitHub\initiativePBL\circuit_motordrive\initiativepblr
 
     Tool  Size           Count   ID
     --------------------------------------
-    T001  0.03900 inches 35    K
+    T001  0.03900 inches 42    K
     --------------------------------------
-    Total                35
+    Total                42
     --------------------------------------
 
 C:\Users\k_kame\Documents\GitHub\initiativePBL\circuit_motordrive\initiativepblrobot - Drill Data - [Through Hole] (Unplated).drl
@@ -100,9 +102,8 @@ C:\Users\k_kame\Documents\GitHub\initiativePBL\circuit_motordrive\initiativepblr
     Tool  Size           Count   ID
     --------------------------------------
     T001  0.02500 inches 1
-    T002  0.03937 inches 5     L
     --------------------------------------
-    Total                6
+    Total                1
     --------------------------------------
 
 
@@ -122,7 +123,6 @@ Drill Ident Drawing
     Drill Plated Size Shape ID
     -----------------------------------
     39    Y      100  Round K
-    39           100  Round L
 
     D-Code Shape  (thou)
     -----------------------
